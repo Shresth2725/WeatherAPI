@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.wrapper {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 1em;
+}
+
+.container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    padding: 3em 1.8em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1em;
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    text-align: center;
+}
+
+.search-container {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.35em;
+}
+
+.search-container input,
+.search-container button {
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+.search-container input {
+    padding: 0.7em;
+    background-color: transparent;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    font-weight: 300;
+    font-size: larger;
+}
+
+.search-container input::placeholder {
+    color: #e5e5e5;
+}
+
+.search-container input:focus {
+    border-color: white;
+}
+
+.search-container button {
+    color: #62b8f5;
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #62b8f5;
+    color: white;
+}
+
+#result {
+    margin-top: 2em;
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+}
+
+#result h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#result p {
+    margin: 0.5em 0;
+}
+
+#result img {
+    width: 75px;
+    height: 75px;
+    margin-top: 1em;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
